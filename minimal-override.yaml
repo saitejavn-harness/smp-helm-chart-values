@@ -1,0 +1,73 @@
+global:
+  ccm:
+    enabled: true
+  cd:
+    enabled: true
+  cet:
+    enabled: true
+  cg:
+    enabled: true
+  chaos:
+    enabled: true
+  ci:
+    enabled: true
+  database:
+    clickhouse:
+      enabled: true
+  ff:
+    enabled: true
+  gitops:
+    enabled: true
+  ha: false
+  imageRegistry: ""
+  ingress:
+    annotations: {}
+    className: harness
+    enabled: true
+    hosts:
+    - 'my-host.example.org'
+    ingressGatewayServiceUrl: ""
+    objects:
+      annotations: {}
+    tls:
+      enabled: false
+      secretName: harness-cert
+    useSelfSignedCert: false
+  kubeVersion: ""
+  lwd:
+    autocud:
+      enabled: false
+    enabled: false
+  migrator:
+    enabled: true
+  mongoSSL: false
+  ng:
+    enabled: true
+  ngcustomdashboard:
+    enabled: true
+  opa:
+    enabled: true
+  saml:
+    autoaccept: false
+  smtpCreateSecret:
+    enabled: true
+  srm:
+    enabled: true
+  stackDriverLoggingEnabled: true
+  sto:
+    enabled: true
+platform:
+  bootstrap:
+    database:
+      clickhouse:
+        enabled: true
+    networking:
+      defaultbackend:
+        create: true
+      nginx:
+        create: true
+        healthNodePort: "31057"
+        healthPort: "10254"
+        httpNodePort: 32501
+        httpsNodePort: 32506
+        loadBalancerEnabled: false

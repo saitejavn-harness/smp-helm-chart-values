@@ -1,0 +1,1 @@
+# smp-helm-chart-values
